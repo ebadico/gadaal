@@ -15,15 +15,7 @@ class SurveyStatus extends Partition
      */
     public function calculate(Request $request)
     {
-        return $this->count($request, Survey::class, 'status')
-                ->label(function ($label){
-                    switch ($label) {
-                        case '0':
-                            return 'Not Fixed';
-                        case 1:
-                            return 'Fixed';
-                    }
-                });
+        return $this->count($request, Survey::class, 'status');
     }
 
     /**
