@@ -10,7 +10,7 @@
         "fideloper/proxy": "^4.0",
         "intervention/image": "^2.4",
         "jeremykenedy/laravel-logger": "^2.2",
-        "jeremykenedy/laravel-users": "^3.1",
+        //"jeremykenedy/laravel-users": "^3.1",
         "laravel/framework": "5.6.*",
         "laravel/nova": "*",
         "laravel/tinker": "^1.0",
