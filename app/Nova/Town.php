@@ -2,7 +2,9 @@
 
 namespace App\Nova;
 
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Text;
 use Illuminate\Http\Request;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
@@ -20,7 +22,7 @@ class Town extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'name';
 
     /**
      * The columns that should be searched.
@@ -41,6 +43,15 @@ class Town extends Resource
     {
         return [
             ID::make()->sortable(),
+            Text::make('name')
+                ->sortable()
+                ->rules('required', 'max:255'), 
+            Text::make('latitude')
+                ->rules('required', 'max:255'), 
+            Text::make('longitude')
+                ->rules('required', 'max:255'), 
+            HasMany::make('surveys'),
+
         ];
     }
 
