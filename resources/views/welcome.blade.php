@@ -73,7 +73,7 @@
                         <a href="{{ url('/nova') }}">Home</a>
 
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ url('/nova') }}">Login</a>
                     @endauth
                 </div>
             @endif

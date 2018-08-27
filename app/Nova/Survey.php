@@ -9,6 +9,7 @@ use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\Status;
+use App\Nova\Metrics;
 
 //use OwenMelbz\RadioField\RadioButton;
 
@@ -83,12 +84,14 @@ class Survey extends Resource
     public function cards(Request $request)
     {
         return [
+
+            (new Metrics\NewSurveys)->width('1/2'),
             // (new Metrics\TotalSurvey)
             // ->canSee(function ($request) {
             //     return $request->user()->can('update-users', $this);
             // }),
             // (new Metrics\SurveyPerDay),            
-            // (new Metrics\SurveyAgeGroup),
+            (new Metrics\SurveyAgeGroup)->width('1/2'),
             // (new Metrics\SurveyStatus),
             // //SurveyStatus
             // //->width('1/2')
