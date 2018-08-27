@@ -54,6 +54,9 @@ class Survey extends Resource
             Text::make('fullname')
                 ->sortable()
                 ->rules('required', 'max:255'),
+            Text::make('phone')
+                ->sortable()
+                ->rules('required', 'max:255'),
             Text::make('age')
                 ->sortable()
                 ->rules('required', 'max:255'),
@@ -62,8 +65,8 @@ class Survey extends Resource
             //     'Male' => 'Male',
             //     'Female' => 'Female',
             // ]),
-            Boolean::make('Status'),
-            Boolean::make('Fence')->hideFromIndex(),
+            // Boolean::make('Status'),
+            // Boolean::make('Fence')->hideFromIndex(),
 
 
             BelongsTo::make('Town')->searchable(),
