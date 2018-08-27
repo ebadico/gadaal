@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "55347c6a8afed84f068a16a3389b7879",
+    "content-hash": "d94a282fa6211e45f928f29caa5796a4",
     "packages": [
         {
             "name": "barryvdh/elfinder-flysystem-driver",
@@ -2587,6 +2587,62 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
+        },
+        {
+            "name": "runlinenl/nova-profile-tool",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/runlinenl/nova-profile-tool.git",
+                "reference": "7709d2b4ed146f9605867d63b9664612dbc866b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/runlinenl/nova-profile-tool/zipball/7709d2b4ed146f9605867d63b9664612dbc866b1",
+                "reference": "7709d2b4ed146f9605867d63b9664612dbc866b1",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "*",
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.6",
+                "phpunit/phpunit": "7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Runline\\ProfileTool\\ToolServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Runline\\ProfileTool\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Patrick Bergman",
+                    "email": "patrick@runline.nl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A tool for Laravel Nova to allow users to edit their profile data",
+            "homepage": "https://github.com/runlinenl/nova-profile-tool",
+            "keywords": [
+                "laravel",
+                "nova",
+                "profile",
+                "tool"
+            ],
+            "time": "2018-08-26T21:02:20+00:00"
         },
         {
             "name": "spatie/db-dumper",

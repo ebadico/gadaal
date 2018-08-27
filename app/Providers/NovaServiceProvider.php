@@ -68,9 +68,19 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     public function tools()
     {
         return [
-            new \Vyuldashev\NovaPermission\NovaPermissionTool(),
-            new \Spatie\BackupTool\BackupTool(),
+           // new \Vyuldashev\NovaPermission\NovaPermissionTool(),
+            (new \Vyuldashev\NovaPermission\NovaPermissionTool())
+            ->canSee(function ($request) {
+                return $request->user()->hasrole('super-admin', $this);
+            }),
 
+            (new \Spatie\BackupTool\BackupTool())
+            ->canSee(function ($request) {
+                return $request->user()->hasrole('super-admin', $this);
+            }),
+         
+
+           new \Runline\ProfileTool\ProfileTool,
 
         ];
     }
