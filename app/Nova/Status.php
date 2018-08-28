@@ -7,7 +7,7 @@ use Laravel\Nova\Fields\Text;
 use Illuminate\Http\Request;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use App\Nova\Metrics;
-
+use Laravel\Nova\Fields\HasMany;
 class Status extends Resource
 {
     /**
@@ -42,10 +42,10 @@ class Status extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make()->sortable(),
-            Text::make('name')
-                ->sortable()
+            Text::make('Surveys that are:','name')
                 ->rules('required', 'max:255'),
+            HasMany::make('surveys'),
+
         ];
     }
 

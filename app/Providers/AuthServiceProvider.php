@@ -12,6 +12,8 @@ use App\Policies\TownPolicy;
 use App\Town;
 use App\Policies\RolePolicy;
 use App\Role;
+use App\Policies\StatusPolicy;
+use App\Status;
 class AuthServiceProvider extends ServiceProvider
 {
     /**
@@ -25,6 +27,7 @@ class AuthServiceProvider extends ServiceProvider
         Survey::class => SurveyPolicy::class,
         Town::class => TownPolicy::class,
         Role::class => RolePolicy::class,
+        Status::class => StatusPolicy::class,
     ];
 
     /**
