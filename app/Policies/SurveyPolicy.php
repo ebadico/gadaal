@@ -56,7 +56,7 @@ class SurveyPolicy
      */
     public function delete(User $user, Survey $survey)
     {
-                    return $user->hasRole('super-admin');
+           return $user->hasRole('super-admin');
 
     }
 

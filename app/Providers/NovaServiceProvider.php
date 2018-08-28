@@ -59,7 +59,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
             (new Metrics\NewSurveys)->width('1/2'),
             (new Metrics\SurveyPerDay)->width('1/2'),
             (new Metrics\SurveyAgeGroup)->width('1/2'),
-            (new Metrics\SurveyStatus)->width('1/2'),
+            // (new Metrics\SurveyStatus)->width('1/2'),
+            (new Metrics\CountStatus)->width('1/2'),
 
 
         ];

@@ -18,7 +18,6 @@
         "runlinenl/nova-profile-tool": "^1.0",
         "spatie/laravel-cors": "^1.2",
         "spatie/laravel-medialibrary": "^7.0.0",
-        "spatie/laravel-model-status": "^1.6",
         "spatie/laravel-permission": "^2.16",
         "spatie/nova-backup-tool": "^1.0",
         "tymon/jwt-auth": "^1.0.0-rc.2",

@@ -3,12 +3,12 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Spatie\ModelStatus\HasStatuses;
+//use Spatie\ModelStatus\HasStatuses;
 
 class Survey extends Model
 {
 
-    use HasStatuses;
+    //use HasStatuses;
     
           protected $fillable = [
 
@@ -31,7 +31,10 @@ class Survey extends Model
                   return $this->belongsTo(Town::class);
               }
 
-
+public function Status()
+              {
+                  return $this->belongsTo(Status::class);
+              }
            public function questions()
            {
              return $this->belongsToMany(Question::class);

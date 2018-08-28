@@ -2,36 +2,27 @@
 
 namespace App\Nova;
 
-use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
-use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Boolean;
-use Laravel\Nova\Fields\DateTime;
-use Laravel\Nova\Fields\Status;
-use App\Nova\Metrics;
-use Spatie\ModelStatus\HasStatuses;
-//use OwenMelbz\RadioField\RadioButton;
-
+use Illuminate\Http\Request;
 use Laravel\Nova\Http\Requests\NovaRequest;
-use Maatwebsite\LaravelNovaExcel\Actions\DownloadExcel;
+use App\Nova\Metrics;
 
-class Survey extends Resource
+class Status extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = 'App\Survey';
+    public static $model = 'App\Status';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-
-    public static $title = 'id';
+    public static $title = 'name';
 
     /**
      * The columns that should be searched.
@@ -39,7 +30,7 @@ class Survey extends Resource
      * @var array
      */
     public static $search = [
-        'id','fullname',
+        'id','name',
     ];
 
     /**
@@ -52,27 +43,9 @@ class Survey extends Resource
     {
         return [
             ID::make()->sortable(),
-            Text::make('fullname')
+            Text::make('name')
                 ->sortable()
                 ->rules('required', 'max:255'),
-            Text::make('phone')
-                ->sortable()
-                ->rules('required', 'max:255'),
-            Text::make('age')
-                ->sortable()
-                ->rules('required', 'max:255'),
-            // RadioButton::make('gender')
-            //     ->options([
-            //     'Male' => 'Male',
-            //     'Female' => 'Female',
-            // ]),
-            // Boolean::make('Status'),
-            // Boolean::make('Fence')->hideFromIndex(),
-
-
-            BelongsTo::make('Town')->searchable(),
-            BelongsTo::make('Status'),
-            DateTime::make('Created at')->exceptOnForms(),
         ];
     }
 
@@ -85,18 +58,7 @@ class Survey extends Resource
     public function cards(Request $request)
     {
         return [
-
-            (new Metrics\NewSurveys)->width('1/2'),
-            // (new Metrics\TotalSurvey)
-            // ->canSee(function ($request) {
-            //     return $request->user()->can('update-users', $this);
-            // }),
-            // (new Metrics\SurveyPerDay),            
-            (new Metrics\SurveyAgeGroup)->width('1/2'),
-            // (new Metrics\SurveyStatus),
-            // //SurveyStatus
-            // //->width('1/2')
-            
+            (new Metrics\CountStatus)->width('1/2'),
         ];
     }
 
@@ -108,9 +70,7 @@ class Survey extends Resource
      */
     public function filters(Request $request)
     {
-        return [
-
-        ];
+        return [];
     }
 
     /**
@@ -132,9 +92,6 @@ class Survey extends Resource
      */
     public function actions(Request $request)
     {
-        return [
-                new DownloadExcel,
-
-        ];
+        return [];
     }
 }
