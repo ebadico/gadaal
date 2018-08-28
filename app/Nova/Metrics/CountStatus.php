@@ -13,6 +13,8 @@ class CountStatus extends Partition
      * @param  \Illuminate\Http\Request  $request
      * @return mixed
      */
+    public $name ="Survey Status";
+
     public function calculate(Request $request)
     {
         return $this->count($request, Survey::class, 'status_id')
