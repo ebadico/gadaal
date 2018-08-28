@@ -53,6 +53,16 @@ abstract class FieldElement extends Element
         return $this;
     }
 
+     public function ShowOnlyDetails()
+    {
+        $this->showOnIndex = false;
+        $this->showOnDetail = true;
+        $this->showOnCreation = false;
+        $this->showOnUpdate = false;
+
+        return $this;
+    }
+
     /**
      * Specify that the element should be hidden from the detail view.
      *
