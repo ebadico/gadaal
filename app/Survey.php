@@ -4,11 +4,13 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 //use Spatie\ModelStatus\HasStatuses;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Survey extends Model
 {
 
-    //use HasStatuses;
+    use SoftDeletes;
+    protected $dates = ['deleted_at'];
     
           protected $fillable = [
 

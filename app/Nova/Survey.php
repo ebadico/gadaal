@@ -88,20 +88,16 @@ class Survey extends Resource
                      ->ShowOnlyDetails(),
                 Text::make('Is there any broken tap','tap')
                      ->ShowOnlyDetails(),
-                    
                 Text::make('fence')
                      ->ShowOnlyDetails(),
                 Text::make('gate')
                      ->ShowOnlyDetails(),
-
-                
             ];
         }
 
     protected function Finance()
         {
             return [
-
                 Text::make('Is the water expensive?', 'price')
                     ->ShowOnlyDetails(),
                 Text::make('how much is 20 litre??','pjirgaan')
@@ -109,19 +105,16 @@ class Survey extends Resource
                 Text::make('Have you paid any extra cash to get your water?','extracash')->ShowOnlyDetails(),
                 Text::make('Was this a bribe or something reasonable?','bribe')
                     ->ShowOnlyDetails(),
-                
                 Text::make('Was it a lot of money??','alotofmoney')
                     ->ShowOnlyDetails(),
                 Text::make('is the extra money kept at the kiosk?','kept')
                     ->ShowOnlyDetails(),
-                    
                 Text::make('Do you have any Income?','income')
                     ->ShowOnlyDetails(),
                 Text::make('Do you receive the water receipt','invoice')
                     ->ShowOnlyDetails(),
                 Text::make('is there any cheating at the water point?','cheating')
                     ->ShowOnlyDetails(),
-
                 
             ];
         }
