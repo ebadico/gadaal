@@ -27,6 +27,19 @@ class Survey extends Model
           ];
 
 // a survey belongs to one project 
+public function scopeFixed($query)
+    {
+        return $query->where('status_id', 1);
+    }
+public function scopeInfrastructure($query)
+    {
+        return $query->where('infrastructure', 1);
+    }
+
+public function scopeFinance($query)
+    {
+        return $query->where('finance', 1);
+    }
 
  public function town()
               {
