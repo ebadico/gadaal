@@ -62,6 +62,7 @@ class Survey extends Resource
             BelongsTo::make('Town')->searchable()->hideWhenUpdating(),
             BelongsTo::make('Status'),
             DateTime::make('Created at')->ShowOnlyDetails(),
+            DateTime::make('Updated at')->ShowOnlyDetails(),
 
           new Panel('Infrastructure', $this->Infrastructure()),
           new Panel('Finance', $this->Finance()),
