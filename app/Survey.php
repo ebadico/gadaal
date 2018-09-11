@@ -48,7 +48,7 @@ public function scopeFinance($query)
 
 public function Status()
               {
-                  return $this->belongsTo(Status::class);
+            return $this->belongsToMany(Status::class)->withPivot('note');
               }
            public function questions()
            {

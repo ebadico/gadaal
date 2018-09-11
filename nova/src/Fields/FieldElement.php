@@ -19,6 +19,7 @@ abstract class FieldElement extends Element
      * @var bool
      */
     public $showOnIndex = true;
+    public $ShowOnlyDetails = true;
 
     /**
      * Indicates if the element should be shown on the detail view.
@@ -39,6 +40,8 @@ abstract class FieldElement extends Element
      *
      * @var bool
      */
+
+
     public $showOnUpdate = true;
 
     /**
@@ -53,16 +56,6 @@ abstract class FieldElement extends Element
         return $this;
     }
 
-     public function ShowOnlyDetails()
-    {
-        $this->showOnIndex = false;
-        $this->showOnDetail = true;
-        $this->showOnCreation = false;
-        $this->showOnUpdate = false;
-
-        return $this;
-    }
-
     /**
      * Specify that the element should be hidden from the detail view.
      *
@@ -71,6 +64,13 @@ abstract class FieldElement extends Element
     public function hideFromDetail()
     {
         $this->showOnDetail = false;
+
+        return $this;
+    }
+
+    public function ShowOnlyDetails()
+    {
+        $this->showOnIndex = false;
 
         return $this;
     }

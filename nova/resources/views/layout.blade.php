@@ -25,7 +25,7 @@
             <div class="min-h-screen flex-none pt-header min-h-screen w-sidebar bg-grad-sidebar px-6">
                 <a href="{{ Nova::path() }}">
                     <div class="absolute pin-t pin-l pin-r bg-logo flex items-center w-sidebar h-header px-6 text-white">
-                       <h3>NRC Wash App</h3>
+                       NRC Wash App
                     </div>
                 </a>
 
@@ -38,7 +38,7 @@
             <div class="content">
                 <div class="flex items-center relative shadow h-header bg-white z-50 px-6">
                     <a href="{{ Config::get('nova.url') }}" class="no-underline dim font-bold text-90 mr-6">
-                       <h3>NRC Wash App</h3>
+                        NRC Wash App
                     </a>
 
                     @if (count(Nova::globallySearchableResources(request())) > 0)
@@ -54,9 +54,9 @@
                     @yield('content')
 
                     <p class="mt-8 text-center text-xs text-80">
-                        <a href="/" class="text-primary dim no-underline">Water App Dash</a>
+                        <a href="http://Ilsoftware.so" class="text-primary dim no-underline">NRC Wash App</a>
                         <span class="px-1">&middot;</span>
-                        &copy; {{ date('Y') }} Ilsoftware - 
+                        &copy; {{ date('Y') }} Ilsoftware.so.
                         <span class="px-1">&middot;</span>
                         v{{ Laravel\Nova\Nova::version() }}
                     </p>

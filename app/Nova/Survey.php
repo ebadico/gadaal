@@ -4,6 +4,7 @@ namespace App\Nova;
 
 use Laravel\Nova\Panel;
 use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
@@ -13,6 +14,7 @@ use Laravel\Nova\Fields\Status;
 use App\Nova\Metrics;
 use Spatie\ModelStatus\HasStatuses;
 use OwenMelbz\RadioField\RadioButton;
+use Laravel\Nova\Fields\Textarea;
 
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Maatwebsite\LaravelNovaExcel\Actions\DownloadExcel;
@@ -52,6 +54,13 @@ class Survey extends Resource
     public function fields(Request $request)
     {
         return [
+            BelongsToMany::make('Status')
+                ->fields(function () {
+                    return [
+                        Textarea::make('note')                
+                            ->rules('required', 'max:255'),
+                    ];
+                }),
             ID::make()->sortable(),
             Text::make('fullname')->hideWhenUpdating(),
             Text::make('phone')->hideWhenUpdating(),
@@ -60,7 +69,6 @@ class Survey extends Resource
                 ->hideWhenUpdating(),
             Text::make('Gender')->hideWhenUpdating(),
             BelongsTo::make('Town')->searchable()->hideWhenUpdating(),
-            BelongsTo::make('Status'),
             DateTime::make('Created at')->ShowOnlyDetails(),
             DateTime::make('Updated at')->ShowOnlyDetails(),
 
