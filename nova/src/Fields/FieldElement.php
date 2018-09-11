@@ -71,6 +71,7 @@ abstract class FieldElement extends Element
     public function ShowOnlyDetails()
     {
         $this->showOnIndex = false;
+        $this->showOnUpdate = false;
 
         return $this;
     }
@@ -95,6 +96,7 @@ abstract class FieldElement extends Element
     public function hideWhenUpdating()
     {
         $this->showOnUpdate = false;
+        
 
         return $this;
     }
