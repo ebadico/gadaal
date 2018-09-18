@@ -21,7 +21,7 @@ class CountStatus extends Partition
 
 
     
-        $Status = status::withcount('App\Surveys')->get();
+        $Status = Status::withcount('Surveys')->get();
         
         $fixed = status::find(1);
         $countfixed=count($fixed->surveys);
