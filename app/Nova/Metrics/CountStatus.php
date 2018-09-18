@@ -20,27 +20,27 @@ class CountStatus extends Partition
     {
 
 
-         return  $this->result([
-                    'Fixed' => 1, 
-                    'Not Fixed' => 2,
-                    'Can\'t Fix' => 3,
-                ]);
-        // $Status = status::withcount('Surveys')->get();
+         // return  $this->result([
+         //            'Fixed' => 1, 
+         //            'Not Fixed' => 2,
+         //            'Can\'t Fix' => 3,
+         //        ]);
+        $Status = status::withcount('App\Surveys')->get();
         
-        // $fixed = status::find(1);
-        // $countfixed=count($fixed->surveys);
+        $fixed = status::find(1);
+        $countfixed=count($fixed->surveys);
 
-        // $notfixed = status::find(2);
-        // $countnotfix=count($notfixed->surveys);
+        $notfixed = status::find(2);
+        $countnotfix=count($notfixed->surveys);
 
-        // $cantfixed = status::find(3);
-        // $countcantfix=count($cantfixed->surveys);
+        $cantfixed = status::find(3);
+        $countcantfix=count($cantfixed->surveys);
 
-        // return  $this->result([
-        //     'Fixed' => $countfixed, 
-        //     'Not Fixed' => $countnotfix,
-        //     'Can\'t Fix' => $countcantfix,
-        //         ]);
+        return  $this->result([
+            'Fixed' => $countfixed, 
+            'Not Fixed' => $countnotfix,
+            'Can\'t Fix' => $countcantfix,
+                ]);
               
     }
 
