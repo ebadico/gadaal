@@ -19,7 +19,7 @@ class CountStatus extends Partition
     public function calculate(Request $request)
     {
 
-        $Status = status::withcount('surveys')->get();
+        $Status = status::withcount('Surveys')->get();
         
         
 
