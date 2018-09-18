@@ -20,11 +20,7 @@ class CountStatus extends Partition
     {
 
 
-         // return  $this->result([
-         //            'Fixed' => 1, 
-         //            'Not Fixed' => 2,
-         //            'Can\'t Fix' => 3,
-         //        ]);
+    
         $Status = status::withcount('App\Surveys')->get();
         
         $fixed = status::find(1);
