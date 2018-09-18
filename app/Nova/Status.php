@@ -4,10 +4,12 @@ namespace App\Nova;
 
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
 use Illuminate\Http\Request;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use App\Nova\Metrics;
 use Laravel\Nova\Fields\HasMany;
+use Laravel\Nova\Fields\BelongsToMany;
 class Status extends Resource
 {
     /**
@@ -16,6 +18,7 @@ class Status extends Resource
      * @var string
      */
     public static $model = 'App\Status';
+    public static $displayInNavigation = false;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -42,11 +45,27 @@ class Status extends Resource
     public function fields(Request $request)
     {
         return [
-            Text::make('Surveys that are:','name')
+            ID::make()->sortable(),
+            Text::make('status: ','name')
                 ->rules('required', 'max:255'),
-            HasMany::make('surveys'),
+            $this->StatusField(),
 
         ];
+    }
+
+
+    public function StatusField()
+    {
+
+        return BelongsToMany::make('Surveys')
+                ->fields(function () {
+                    return [
+                        Text::make('note')                
+                            ->rules('required', 'max:255')
+                            ->onlyOnIndex(),
+
+                    ];
+                });
     }
 
     /**
@@ -58,7 +77,7 @@ class Status extends Resource
     public function cards(Request $request)
     {
         return [
-            (new Metrics\CountStatus)->width('1/2'),
+            //(new Metrics\CountStatus)->width('1/2'),
         ];
     }
 
@@ -94,4 +113,6 @@ class Status extends Resource
     {
         return [];
     }
+
+   
 }

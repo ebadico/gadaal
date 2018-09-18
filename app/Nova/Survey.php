@@ -12,8 +12,9 @@ use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\Status;
 use App\Nova\Metrics;
-use Spatie\ModelStatus\HasStatuses;
+//use Spatie\ModelStatus\HasStatuses;
 use OwenMelbz\RadioField\RadioButton;
+
 use Laravel\Nova\Fields\Textarea;
 
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -42,7 +43,7 @@ class Survey extends Resource
      * @var array
      */
     public static $search = [
-        'id','fullname',
+        'id','fullname','Created_at',
     ];
 
     /**
@@ -54,13 +55,8 @@ class Survey extends Resource
     public function fields(Request $request)
     {
         return [
-            BelongsToMany::make('Status')
-                ->fields(function () {
-                    return [
-                        Textarea::make('note')                
-                            ->rules('required', 'max:255'),
-                    ];
-                }),
+           
+            $this->StatusField(),
             ID::make()->sortable(),
             Text::make('fullname')->hideWhenUpdating(),
             Text::make('phone')->hideWhenUpdating(),
@@ -69,7 +65,7 @@ class Survey extends Resource
                 ->hideWhenUpdating(),
             Text::make('Gender')->hideWhenUpdating(),
             BelongsTo::make('Town')->searchable()->hideWhenUpdating(),
-            DateTime::make('Created at')->ShowOnlyDetails(),
+            DateTime::make('Created at')->format('DD MMM, YY'),
             DateTime::make('Updated at')->ShowOnlyDetails(),
 
           new Panel('Infrastructure', $this->Infrastructure()),
@@ -84,7 +80,17 @@ class Survey extends Resource
     ];
            
     }
+public function StatusField()
+    {
 
+        return BelongsToMany::make('Status')
+                ->fields(function () {
+                    return [
+                        Text::make('note')                
+                            ->rules('required', 'max:255'),
+                    ];
+                });
+    }
 
   
     protected function Infrastructure()

@@ -3,7 +3,6 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-//use Spatie\ModelStatus\HasStatuses;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Survey extends Model
@@ -26,6 +25,10 @@ class Survey extends Model
 
           ];
 
+public function Status()
+              {
+            return $this->belongsToMany(Status::class)->withPivot('note');
+              }
 // a survey belongs to one project 
 public function scopeFixed($query)
     {
@@ -46,10 +49,7 @@ public function scopeFinance($query)
                   return $this->belongsTo(Town::class);
               }
 
-public function Status()
-              {
-            return $this->belongsToMany(Status::class)->withPivot('note');
-              }
+
            public function questions()
            {
              return $this->belongsToMany(Question::class);

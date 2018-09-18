@@ -92,5 +92,7 @@
     <script>
         Nova.liftOff()
     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGuFAiycI9OrJ7mfBH3tmS1aqhMVpQP5U"></script>
+
 </body>
 </html>

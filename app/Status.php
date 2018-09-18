@@ -11,6 +11,6 @@ class Status extends Model
 
      public function Surveys()
            {
-             return $this->belongsToMany(Survey::class)->withPivot('note');;
+             return $this->belongsToMany(Survey::class)->withPivot('note');
            }
 }

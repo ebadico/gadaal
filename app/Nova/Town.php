@@ -7,6 +7,7 @@ use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
 use Illuminate\Http\Request;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Naif\MapAddress\MapAddress;
 
 class Town extends Resource
 {
@@ -51,6 +52,9 @@ class Town extends Resource
             Text::make('longitude')
                 ->rules('required', 'max:255'), 
             HasMany::make('surveys'),
+            MapAddress::make('address')
+                ->initLocation('latitude','longitude')
+                ->zoom(12),
 
         ];
     }
