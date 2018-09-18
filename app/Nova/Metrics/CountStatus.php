@@ -24,13 +24,13 @@ class CountStatus extends Partition
         $Status = Status::withcount('Surveys')->get();
         
         $fixed = status::find(1);
-        $countfixed=count($fixed->surveys);
+        $countfixed=count($fixed->Surveys);
 
         $notfixed = status::find(2);
-        $countnotfix=count($notfixed->surveys);
+        $countnotfix=count($notfixed->Surveys);
 
         $cantfixed = status::find(3);
-        $countcantfix=count($cantfixed->surveys);
+        $countcantfix=count($cantfixed->Surveys);
 
         return  $this->result([
             'Fixed' => $countfixed, 
