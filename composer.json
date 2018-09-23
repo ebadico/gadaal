@@ -47,20 +47,7 @@
             "App\\": "app/"
         }
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://nova.laravel.com"
-        },
-        {
-            "type": "path",
-            "url": "./nova-components/Nrcthemetwo"
-        },
-        {
-            "type": "path",
-            "url": "./nova-components/Themetwo"
-        }
-    ],
+    
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
