@@ -34,8 +34,8 @@ class CountStatus extends Partition
 
         return  $this->result([
             'Fixed' => $countfixed, 
-            'Not Fixed' => countnotfix,
-            'Can\'t Fix' => cantfixed,
+            'Not Fixed' => $countnotfix,
+            'Can\'t Fix' => $cantfixed,
                 ]);
               
     }
