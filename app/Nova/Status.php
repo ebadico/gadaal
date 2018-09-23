@@ -18,7 +18,7 @@ class Status extends Resource
      * @var string
      */
     public static $model = 'App\Status';
-    //public static $displayInNavigation = false;
+    public static $displayInNavigation = false;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
