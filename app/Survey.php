@@ -49,6 +49,33 @@ public function scopeFinance($query)
                   return $this->belongsTo(Town::class);
               }
 
+public function getinfrastructureAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getfinanceAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getquantityAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getaccessAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function gethealthAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getviolenceAttribute($value)
+    {
+           return ($value ? 'Yes' : 'No');
+    }
+
+
+
 
            public function questions()
            {
@@ -59,6 +86,8 @@ public function scopeFinance($query)
     {
         return ($value ? 'Yes' : 'No');
     }
+
+
   public function getkeyAttribute($value)
     {
         return ($value ? 'Yes' : 'No');

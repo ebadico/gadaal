@@ -43,7 +43,7 @@ class Survey extends Resource
      * @var array
      */
     public static $search = [
-        'id','fullname','Created_at',
+        'id','fullname','Created_at','phone',
     ];
 
     /**
@@ -66,11 +66,11 @@ class Survey extends Resource
             Text::make('Gender')->hideWhenUpdating(),
             BelongsTo::make('Town')->searchable()->hideWhenUpdating(),
             DateTime::make('Created at')->format('DD MMM, YY'),
-            DateTime::make('Updated at')->ShowOnlyDetails(),
+            DateTime::make('Updated at')->hideFromIndex(),
 
           new Panel('Infrastructure', $this->Infrastructure()),
           new Panel('Finance', $this->Finance()),
-          new Panel('Quantity', $this->Quantity()),
+          new Panel('Quantity/Quality', $this->Quantity()),
           new Panel('Access', $this->Access()),
           new Panel('Health', $this->Health()),
           new Panel('Violence', $this->Violence()),
@@ -86,7 +86,7 @@ public function StatusField()
         return BelongsToMany::make('Status')
                 ->fields(function () {
                     return [
-                        Text::make('note')                
+                        Textarea::make('Comments','note')                
                             ->rules('required', 'max:255'),
                     ];
                 });
@@ -98,15 +98,15 @@ public function StatusField()
             return [
 
                 Text::make('Is there any water leakage?', 'leak')
-                     ->ShowOnlyDetails(),
+                     ->hideFromIndex(),
                 Text::make('Is there any missing handler?','key')
-                     ->ShowOnlyDetails(),
+                     ->hideFromIndex(),
                 Text::make('Is there any broken tap','tap')
-                     ->ShowOnlyDetails(),
+                     ->hideFromIndex(),
                 Text::make('fence')
-                     ->ShowOnlyDetails(),
+                     ->hideFromIndex(),
                 Text::make('gate')
-                     ->ShowOnlyDetails(),
+                     ->hideFromIndex(),
             ];
         }
 
@@ -114,22 +114,22 @@ public function StatusField()
         {
             return [
                 Text::make('Is the water expensive?', 'price')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('how much is 20 litre??','pjirgaan')
-                    ->ShowOnlyDetails(),
-                Text::make('Have you paid any extra cash to get your water?','extracash')->ShowOnlyDetails(),
+                    ->hideFromIndex(),
+                Text::make('Have you paid any extra cash to get your water?','extracash')->hideFromIndex(),
                 Text::make('Was this a bribe or something reasonable?','bribe')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Was it a lot of money??','alotofmoney')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('is the extra money kept at the kiosk?','kept')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Do you have any Income?','income')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Do you receive the water receipt','invoice')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('is there any cheating at the water point?','cheating')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 
             ];
         }
@@ -139,15 +139,15 @@ public function StatusField()
             return [
 
                 Text::make('Does the water have a taste?', 'taste')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Is the tap water dirty??','dirtywater')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Is the water hard when washing clothes?','hardwater')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Is the water slow during the day','slowwater')
-                    ->ShowOnlyDetails(),
-                Text::make('Do all you four taps work at the same time?','fourtaps')
-                    ->ShowOnlyDetails(),   
+                    ->hideFromIndex(),
+                Text::make('Is there any challenge of Working four taps at the same time?','fourtaps')
+                    ->hideFromIndex(),   
             ];
         }
 
@@ -156,21 +156,20 @@ public function StatusField()
             return [
 
                 Text::make('Is the kiosk dark at night?', 'light')
-                    ->ShowOnlyDetails(),
-                Text::make('Is the tap water dirty??','gatelocked')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('is the gate locked more often?','hardwater')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Is the water kiosk far from you more than 500 Meter','faraway')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Do you wait the kiosk line more than 15 munites?','longer')
-                    ->ShowOnlyDetails(),
-                Text::make('Do you wait the kiosk line more than 15 munites?','waitingtime')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
+                Text::make('Is Waiting time for women more than men?
+                        ?','waitingtime')
+                    ->hideFromIndex(),
                 Text::make('the kiosk attendant doesnt allow kids?','toaccess')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Is the kiosk overcrowded?','overcrowded')
-                    ->ShowOnlyDetails(), 
+                    ->hideFromIndex(), 
             ];
         }
 
@@ -178,15 +177,15 @@ public function StatusField()
         {
             return [
                 Text::make('Do you drink the kiosk  water?', 'drink')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Do you feel headache after drinking the water?', 'headache')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Do you have diarrhea when you drink the kiosk water?','sick')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Do you feel stomachache after drinking the water??','stomachache')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Do you have diarrhea when you drink the kiosk water','diarrhea')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
             ];
         }
 
@@ -194,13 +193,13 @@ public function StatusField()
         {
             return [
                 Text::make('Have you faced any security problem while fetching water?', 'security')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Gender', 'sgender')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Do you face security problem during the night?','securitynight')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 Text::make('Do you face security problem during the Day?','securityday')
-                    ->ShowOnlyDetails(),
+                    ->hideFromIndex(),
                 
             ];
         }
@@ -215,15 +214,8 @@ public function StatusField()
         return [
 
             (new Metrics\NewSurveys)->width('1/2'),
-            // (new Metrics\TotalSurvey)
-            // ->canSee(function ($request) {
-            //     return $request->user()->can('update-users', $this);
-            // }),
-            // (new Metrics\SurveyPerDay),            
             (new Metrics\SurveyAgeGroup)->width('1/2'),
-            // (new Metrics\SurveyStatus),
-            // //SurveyStatus
-            // //->width('1/2')
+            
             
         ];
     }
@@ -260,8 +252,17 @@ public function StatusField()
      */
     public function actions(Request $request)
     {
+
+
         return [
-                new DownloadExcel,
+
+
+       
+         (new DownloadExcel)
+                ->only('id', 'request->key','fullname','phone','gender','age','town_id','created_at','infrastructure', 'finance',
+                'quantity', 'access',
+                'health', 'violence')->withHeadings(),
+
 
         ];
     }

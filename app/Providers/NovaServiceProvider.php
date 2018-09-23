@@ -56,7 +56,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function cards()
     {
         return [
-          //  (new Metrics\CountStatus)->width('1/2'),
+            (new Metrics\CountStatus)->width('1/2'),
             (new Metrics\SurveyAgeGroup)->width('1/2'),
             (new Metrics\NewSurveys)->width('1/2'),
             (new Metrics\SurveyPerDay)->width('full'),

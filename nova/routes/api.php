@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 // Scripts & Styles...
+
 Route::get('/scripts/{script}', 'ScriptController@show');
 Route::get('/styles/{style}', 'StyleController@show');
 
@@ -23,6 +24,8 @@ Route::delete('/{resource}/{resourceId}/field/{field}', 'FieldDestroyController@
 Route::delete('/{resource}/{resourceId}/{relatedResource}/{relatedResourceId}/field/{field}', 'PivotFieldDestroyController@handle');
 
 // Actions...
+Route::middleware(['auth', 'activity'])->group(function ($router) {
+
 Route::get('/{resource}/actions', 'ActionController@index');
 Route::post('/{resource}/action', 'ActionController@store');
 
@@ -75,3 +78,4 @@ Route::get('/{resource}/morphable/{field}', 'MorphableController@index');
 Route::post('/{resource}/{resourceId}/attach/{relatedResource}', 'ResourceAttachController@handle');
 Route::post('/{resource}/{resourceId}/update-attached/{relatedResource}/{relatedResourceId}', 'AttachedResourceUpdateController@handle');
 Route::post('/{resource}/{resourceId}/attach-morphed/{relatedResource}', 'MorphedResourceAttachController@handle');
+});

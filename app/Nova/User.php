@@ -6,12 +6,10 @@ use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Gravatar;
-use Laravel\Nova\Fields\Avatar;
-use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Password;
+use Laravel\Nova\Fields\Image;
 use  Laravel\Nova\Fields\MorphToMany;
 use Laravel\Support\Facades\Storage;
-
 class User extends Resource
 {
     /**
@@ -43,12 +41,14 @@ class User extends Resource
      * @param  \Illuminate\Http\Request  $request
      * @return array
      */
-        public function fields(Request $request)
+    public function fields(Request $request)
     {
-
         return [
             ID::make()->sortable(),
             $this->PhotoField(),
+
+            Gravatar::make('image'),
+
             Text::make('Name')
                 ->sortable()
                 ->rules('required', 'max:255'),
@@ -56,12 +56,15 @@ class User extends Resource
             Text::make('Email')
                 ->sortable()
                 ->rules('required', 'email', 'max:255')
+                ->rules('required', 'email', 'max:254')
                 ->creationRules('unique:users,email')
                 ->updateRules('unique:users,email,{{resourceId}}'),
             Text::make('Position')
                 ->sortable()
                 ->rules('required', 'max:255'),
+
             Password::make('Password')
+                ->onlyOnForms()
                 ->creationRules('required', 'string', 'min:6')
                 ->updateRules('nullable', 'string', 'min:6'),
 
