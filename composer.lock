@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7a795225a46ec23c4b9d28885ac2df0",
+    "content-hash": "e763e007339b004917012337e75ee0f4",
     "packages": [
         {
             "name": "barryvdh/elfinder-flysystem-driver",
@@ -1955,40 +1955,6 @@
                 "math"
             ],
             "time": "2017-02-16T16:54:46+00:00"
-        },
-        {
-            "name": "mustafawithA/nrctheme",
-            "version": "9999999-dev",
-            "dist": {
-                "type": "path",
-                "url": "./nova-components/Nrctheme",
-                "reference": "738336b6e4c55a88177b2e56fe4aa47c07d633f0",
-                "shasum": null
-            },
-            "require": {
-                "php": ">=7.1.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "MustafawithA\\Nrctheme\\ThemeServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "MustafawithA\\Nrctheme\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "A Laravel Nova theme.",
-            "keywords": [
-                "laravel",
-                "nova"
-            ]
         },
         {
             "name": "mustafawithA/nrcthemetwo",
