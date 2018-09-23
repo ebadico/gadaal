@@ -28,9 +28,8 @@
         "spatie/nova-backup-tool": "^1.0",
         "tymon/jwt-auth": "^1.0.0-rc.2",
         "vyuldashev/nova-permission": "^1.0",
-        "mustafawithA/nrctheme": "*",
         "mustafawithA/nrcthemetwo": "*",
-        "mustafawitha/themetwo": "*"
+      
     },
     "require-dev": {
         "filp/whoops": "^2.0",
@@ -58,10 +57,7 @@
             "type": "path",
             "url": "./nova-components/Nrcthemetwo"
         },
-        {
-            "type": "path",
-            "url": "./nova-components/Themetwo"
-        }
+        
     ],
     "autoload-dev": {
         "psr-4": {
