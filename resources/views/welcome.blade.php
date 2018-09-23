@@ -70,10 +70,10 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/nova') }}">Home</a>
+                        <a href="{{ url('/admin') }}">Home</a>
 
                     @else
-                        <a href="{{ url('/nova') }}">Login</a>
+                        <a href="{{ url('/admin') }}">Login</a>
                     @endauth
                 </div>
             @endif

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7e384370fd785994acee7bbb6accc94",
+    "content-hash": "e7a795225a46ec23c4b9d28885ac2df0",
     "packages": [
         {
             "name": "barryvdh/elfinder-flysystem-driver",
@@ -2013,6 +2013,40 @@
             "autoload": {
                 "psr-4": {
                     "MustafawithA\\Nrcthemetwo\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova theme.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ]
+        },
+        {
+            "name": "mustafawitha/themetwo",
+            "version": "9999999-dev",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/Themetwo",
+                "reference": "4857f1017c19349d661f35384431b164bf363b68",
+                "shasum": null
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Mustafawitha\\Themetwo\\ThemeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mustafawitha\\Themetwo\\": "src/"
                 }
             },
             "license": [
