@@ -4,10 +4,10 @@
    <a href="{{ route('surveys') }}">
    <li class="list-group-item">Surveys</li>
   </a>
-  @role('Admin')
-  <!-- <a href="{{ route('towns') }}">
+  @role('super-admin')
+  <a href="{{ route('towns') }}">
    <li class="list-group-item">Towns</li>
-  </a> -->
+  </a>
   <a href="{{ route('users') }}">
    <li class="list-group-item">Users </li></a>
   <a href="{{ route('activity') }}">

@@ -41,6 +41,9 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+
+//$app->configure('permission');
+//$app->register(Spatie\Permission\PermissionServiceProvider::class);
 /*
 |--------------------------------------------------------------------------
 | Return The Application

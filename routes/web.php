@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::middleware(['auth', 'activity'])->group(function ($router) {
+Route::middleware(['role:super-admin', 'activity'])->group(function ($router) {
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('surveys', 'SurveyController');
 Route::resource('roles','RoleController');
