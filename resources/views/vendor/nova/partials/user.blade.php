@@ -9,7 +9,11 @@
 <dropdown-menu slot="menu" width="200" direction="rtl">
     <ul class="list-reset">
         <li>
+<<<<<<< HEAD
             <a href="{{ Laravel\Nova\Nova::path() }}/logout" class="block no-underline text-90 hover:bg-30 p-3">
+=======
+            <a href="{{ route('nova.logout') }}" class="block no-underline text-90 hover:bg-30 p-3">
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                 {{ __('Logout') }}
             </a>
         </li>

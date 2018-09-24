@@ -15,14 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Auth::routes();
 
 Route::middleware(['role:super-admin', 'activity'])->group(function ($router) {
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('surveys', 'SurveyController');
 Route::resource('roles','RoleController');
-Route::get('surveys', 'SurveyController@index')->name('surveys');
+//Route::get('surveys', 'SurveyController@index')->name('surveys');
 Route::get('towns', 'TownController@index')->name('towns');
 Route::get('auth/', 'Controller@index')->name('authindex');
 Route::get('auth/show/{user}', 'Controller@show')->name('authshow');

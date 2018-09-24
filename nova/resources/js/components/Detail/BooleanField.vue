@@ -16,7 +16,11 @@ export default {
 
     computed: {
         label() {
+<<<<<<< HEAD
             return this.field.value == true ? 'True' : 'False'
+=======
+            return this.field.value == true ? this.__('Yes') : this.__('No')
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
         },
     },
 }

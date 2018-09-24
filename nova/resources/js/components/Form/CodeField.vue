@@ -4,6 +4,13 @@
             <form-label>
                 {{ field.name }}
             </form-label>
+<<<<<<< HEAD
+=======
+
+            <help-text>
+                {{ field.helpText }}
+            </help-text>
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
         </div>
 
         <div class="w-4/5 px-8 py-6">

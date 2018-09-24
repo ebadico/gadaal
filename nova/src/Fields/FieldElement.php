@@ -19,7 +19,11 @@ abstract class FieldElement extends Element
      * @var bool
      */
     public $showOnIndex = true;
+<<<<<<< HEAD
 
+=======
+   // public $ShowOnlyDetails = true;
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
     /**
      * Indicates if the element should be shown on the detail view.
      *
@@ -34,11 +38,20 @@ abstract class FieldElement extends Element
      */
     public $showOnCreation = true;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
     /**
      * Indicates if the element should be shown on the update view.
      *
      * @var bool
      */
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
     public $showOnUpdate = true;
 
     /**
@@ -65,6 +78,17 @@ abstract class FieldElement extends Element
         return $this;
     }
 
+<<<<<<< HEAD
+=======
+    // public function ShowOnlyDetails()
+    // {
+    //     $this->showOnIndex = false;
+    //     $this->showOnUpdate = false;
+
+    //     return $this;
+    // }
+
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
     /**
      * Specify that the element should be hidden from the creation view.
      *
@@ -85,6 +109,10 @@ abstract class FieldElement extends Element
     public function hideWhenUpdating()
     {
         $this->showOnUpdate = false;
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
 
         return $this;
     }
@@ -94,6 +122,7 @@ abstract class FieldElement extends Element
      *
      * @return $this
      */
+<<<<<<< HEAD
     public function showeverywhere()
     {
         $this->showOnIndex = true;
@@ -103,6 +132,8 @@ abstract class FieldElement extends Element
 
         return $this;
     }
+=======
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
     public function onlyOnIndex()
     {
         $this->showOnIndex = true;

@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 // Scripts & Styles...
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
 Route::get('/scripts/{script}', 'ScriptController@show');
 Route::get('/styles/{style}', 'StyleController@show');
 
@@ -11,6 +15,12 @@ Route::get('/search', 'SearchController@index');
 
 // Fields...
 Route::get('/{resource}/field/{field}', 'FieldController@show');
+<<<<<<< HEAD
+=======
+Route::post('/{resource}/trix-attachment/{field}', 'TrixAttachmentController@store');
+Route::delete('/{resource}/trix-attachment/{field}', 'TrixAttachmentController@destroyAttachment');
+Route::delete('/{resource}/trix-attachment/{field}/{draftId}', 'TrixAttachmentController@destroyPending');
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
 Route::get('/{resource}/creation-fields', 'CreationFieldController@index');
 Route::get('/{resource}/{resourceId}/update-fields', 'UpdateFieldController@index');
 Route::get('/{resource}/creation-pivot-fields/{relatedResource}', 'CreationPivotFieldController@index');
@@ -20,6 +30,11 @@ Route::delete('/{resource}/{resourceId}/field/{field}', 'FieldDestroyController@
 Route::delete('/{resource}/{resourceId}/{relatedResource}/{relatedResourceId}/field/{field}', 'PivotFieldDestroyController@handle');
 
 // Actions...
+<<<<<<< HEAD
+=======
+Route::middleware(['auth', 'activity'])->group(function ($router) {
+
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
 Route::get('/{resource}/actions', 'ActionController@index');
 Route::post('/{resource}/action', 'ActionController@store');
 
@@ -72,3 +87,7 @@ Route::get('/{resource}/morphable/{field}', 'MorphableController@index');
 Route::post('/{resource}/{resourceId}/attach/{relatedResource}', 'ResourceAttachController@handle');
 Route::post('/{resource}/{resourceId}/update-attached/{relatedResource}/{relatedResourceId}', 'AttachedResourceUpdateController@handle');
 Route::post('/{resource}/{resourceId}/attach-morphed/{relatedResource}', 'MorphedResourceAttachController@handle');
+<<<<<<< HEAD
+=======
+});
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb

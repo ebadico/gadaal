@@ -2,7 +2,13 @@
 
 namespace Laravel\Nova;
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Route;
+=======
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Route;
+use Laravel\Nova\Events\NovaServiceProviderRegistered;
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
 
 class PendingRouteRegistration
 {
@@ -22,6 +28,10 @@ class PendingRouteRegistration
     public function withAuthenticationRoutes($middleware = ['web'])
     {
         Route::namespace('Laravel\Nova\Http\Controllers')
+<<<<<<< HEAD
+=======
+            ->domain(config('nova.domain', null))
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
             ->middleware($middleware)
             ->as('nova.')
             ->prefix(Nova::path())
@@ -44,6 +54,10 @@ class PendingRouteRegistration
         Nova::$resetsPasswords = true;
 
         Route::namespace('Laravel\Nova\Http\Controllers')
+<<<<<<< HEAD
+=======
+            ->domain(config('nova.domain', null))
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
             ->middleware($middleware)
             ->as('nova.')
             ->prefix(Nova::path())
@@ -67,10 +81,15 @@ class PendingRouteRegistration
         $this->registered = true;
 
         Route::namespace('Laravel\Nova\Http\Controllers')
+<<<<<<< HEAD
+=======
+            ->domain(config('nova.domain', null))
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
             ->middleware(config('nova.middleware', []))
             ->as('nova.')
             ->prefix(Nova::path())
             ->group(function () {
+<<<<<<< HEAD
                 Route::get('/logout', 'LoginController@logout');
             });
 
@@ -83,6 +102,25 @@ class PendingRouteRegistration
             ->prefix(Nova::path())
             ->get('/{view}', 'Laravel\Nova\Http\Controllers\RouterController@show')
             ->where('view', '.*');
+=======
+                Route::get('/logout', 'LoginController@logout')->name('logout');
+            });
+
+        Event::listen(NovaServiceProviderRegistered::class, function () {
+            Route::domain(config('nova.domain', null))
+                ->middleware(config('nova.middleware', []))
+                ->group(function () {
+                    Route::view(Nova::path(), 'nova::router')->name('nova.index');
+                });
+
+            Route::middleware(config('nova.middleware', []))
+                ->domain(config('nova.domain', null))
+                ->as('nova.')
+                ->prefix(Nova::path())
+                ->get('/{view}', 'Laravel\Nova\Http\Controllers\RouterController@show')
+                ->where('view', '.*');
+        });
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
     }
 
     /**

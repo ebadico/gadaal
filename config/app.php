@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', '/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -159,6 +159,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\NovaServiceProvider::class,
+<<<<<<< HEAD
+=======
+        App\Providers\NovaServiceProvider::class,
+        App\Providers\NovaServiceProvider::class,
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
         App\Providers\RouteServiceProvider::class,
 
     ],

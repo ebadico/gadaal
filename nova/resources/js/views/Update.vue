@@ -35,7 +35,11 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import { Errors, Capitalize, Inflector, InteractsWithResourceInformation } from 'laravel-nova'
+=======
+import { Errors, InteractsWithResourceInformation } from 'laravel-nova'
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
 
 export default {
     mixins: [InteractsWithResourceInformation],
@@ -72,6 +76,7 @@ export default {
 
             this.fields = []
 
+<<<<<<< HEAD
             const { data: fields } = await Nova.request().get(
                 `/nova-api/${this.resourceName}/${this.resourceId}/update-fields`
             ).catch(error => {
@@ -80,6 +85,16 @@ export default {
                     return
                 }
             })
+=======
+            const { data: fields } = await Nova.request()
+                .get(`/nova-api/${this.resourceName}/${this.resourceId}/update-fields`)
+                .catch(error => {
+                    if (error.response.status == 404) {
+                        this.$router.push({ name: '404' })
+                        return
+                    }
+                })
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
 
             this.fields = fields
 
@@ -94,7 +109,13 @@ export default {
                 const response = await this.updateRequest()
 
                 this.$toasted.show(
+<<<<<<< HEAD
                     this.__('The :resource was updated!', {resource: this.resourceInformation.singularLabel.toLowerCase()}),
+=======
+                    this.__('The :resource was updated!', {
+                        resource: this.resourceInformation.singularLabel.toLowerCase(),
+                    }),
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                     { type: 'success' }
                 )
 
@@ -112,7 +133,13 @@ export default {
 
                 if (error.response.status == 409) {
                     this.$toasted.show(
+<<<<<<< HEAD
                         this.__('Another user has updated this resource since this page was loaded. Please refresh the page and try again.'),
+=======
+                        this.__(
+                            'Another user has updated this resource since this page was loaded. Please refresh the page and try again.'
+                        ),
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                         { type: 'error' }
                     )
                 }
@@ -127,7 +154,13 @@ export default {
                 const response = await this.updateRequest()
 
                 this.$toasted.show(
+<<<<<<< HEAD
                     this.__('The :resource was updated!', {resource: this.resourceInformation.singularLabel.toLowerCase()}),
+=======
+                    this.__('The :resource was updated!', {
+                        resource: this.resourceInformation.singularLabel.toLowerCase(),
+                    }),
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                     { type: 'success' }
                 )
 
@@ -141,7 +174,13 @@ export default {
 
                 if (error.response.status == 409) {
                     this.$toasted.show(
+<<<<<<< HEAD
                         this.__('Another user has updated this resource since this page was loaded. Please refresh the page and try again.'),
+=======
+                        this.__(
+                            'Another user has updated this resource since this page was loaded. Please refresh the page and try again.'
+                        ),
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                         { type: 'error' }
                     )
                 }
@@ -182,7 +221,11 @@ export default {
         },
 
         singularName() {
+<<<<<<< HEAD
             return Capitalize(Inflector.singularize(this.resourceName))
+=======
+            return this.resourceInformation.singularLabel
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
         },
     },
 }

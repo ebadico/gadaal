@@ -9,7 +9,12 @@
         </div>
         <div class="w-3/4 py-4">
             <slot name="value">
+<<<<<<< HEAD
                 <p v-if="field.value" class="text-90">{{ field.value }}</p>
+=======
+                <p v-if="field.value && !field.asHtml" class="text-90">{{ field.value }}</p>
+                <div v-else-if="field.value && field.asHtml" v-html="field.value"></div>
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                 <p v-else>&mdash;</p>
             </slot>
         </div>

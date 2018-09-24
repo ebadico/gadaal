@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "31c40c98b73c24aa2b96203965e8756a",
+=======
+    "content-hash": "09500256fec6feeff1c93126c95397fe",
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
     "packages": [
         {
             "name": "acme/analytics",
@@ -154,6 +158,7 @@
             "time": "2018-02-08T07:54:10+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "beyondcode/nova-custom-dashboard-card",
             "version": "0.0.1",
             "source": {
@@ -208,6 +213,8 @@
             "time": "2018-08-22T14:47:03+00:00"
         },
         {
+=======
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
             "name": "cakephp/chronos",
             "version": "1.2.2",
             "source": {
@@ -265,6 +272,7 @@
             "time": "2018-07-11T18:51:56+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "davidpiesse/nova-map",
             "version": "0.0.2",
             "source": {
@@ -307,6 +315,8 @@
             "time": "2018-09-05T14:04:43+00:00"
         },
         {
+=======
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
             "source": {
@@ -667,6 +677,7 @@
             "time": "2018-02-07T20:20:57+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "geo-io/interface",
             "version": "v1.0.1",
             "source": {
@@ -795,12 +806,39 @@
                 "laravel": {
                     "providers": [
                         "Grimzy\\LaravelMysqlSpatial\\SpatialServiceProvider"
+=======
+            "name": "gregoriohc/laravel-nova-theme-responsive",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gregoriohc/laravel-nova-theme-responsive.git",
+                "reference": "76a740e9c4602033b6e61c71f1a0eec9b9597cf4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gregoriohc/laravel-nova-theme-responsive/zipball/76a740e9c4602033b6e61c71f1a0eec9b9597cf4",
+                "reference": "76a740e9c4602033b6e61c71f1a0eec9b9597cf4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Gregoriohc\\LaravelNovaThemeResponsive\\ThemeServiceProvider"
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
+<<<<<<< HEAD
                     "Grimzy\\LaravelMysqlSpatial\\": "src/"
+=======
+                    "Gregoriohc\\LaravelNovaThemeResponsive\\": "src/"
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -809,12 +847,28 @@
             ],
             "authors": [
                 {
+<<<<<<< HEAD
                     "name": "Joseph Estefane",
                     "email": "estefanejoe@gmail.com"
                 }
             ],
             "description": "MySQL spatial data types extension for Laravel.",
             "time": "2018-07-26T00:55:35+00:00"
+=======
+                    "name": "Gregorio Hernández Caso",
+                    "email": "gregoriohc@gmail.com",
+                    "homepage": "https://github.com/gregoriohc",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel Nova responsive theme.",
+            "homepage": "https://github.com/gregoriohc/laravel-nova-theme-responsive",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "time": "2018-09-17T08:21:23+00:00"
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
         },
         {
             "name": "guzzlehttp/psr7",
@@ -1206,6 +1260,7 @@
             "time": "2018-05-04T06:21:38+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "jeremykenedy/laravel-users",
             "version": "v3.1.1",
             "source": {
@@ -1273,6 +1328,19 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/jmikola/geojson/zipball/6ec3016cc0215667b7775f6ead7bd0337ad66eee",
                 "reference": "6ec3016cc0215667b7775f6ead7bd0337ad66eee",
+=======
+            "name": "laravel/framework",
+            "version": "v5.6.38",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "38d838bab9434af79e8ab274ae63f52f7ed45d6e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/38d838bab9434af79e8ab274ae63f52f7ed45d6e",
+                "reference": "38d838bab9434af79e8ab274ae63f52f7ed45d6e",
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                 "shasum": ""
             },
             "require": {
@@ -1455,12 +1523,26 @@
         },
         {
             "name": "laravel/nova",
+<<<<<<< HEAD
             "version": "9999999-dev",
             "dist": {
                 "type": "path",
                 "url": "./nova",
                 "reference": "6b34fd3882e3cff2dc99d288393e92025bc93094",
                 "shasum": null
+=======
+            "version": "v1.1.3",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:laravel/nova.git",
+                "reference": "128428b44cacd13acd04cd9ec5c3f877c4dd7f6b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://nova.laravel.com/dist/laravel/nova/laravel-nova-128428b44cacd13acd04cd9ec5c3f877c4dd7f6b-zip-d3f762.zip",
+                "reference": "128428b44cacd13acd04cd9ec5c3f877c4dd7f6b",
+                "shasum": "1605f542b8a65834fe380a3c5d509290e82fd0ce"
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
             },
             "require": {
                 "cakephp/chronos": "~1.0",
@@ -1514,7 +1596,12 @@
             "keywords": [
                 "admin",
                 "laravel"
+<<<<<<< HEAD
             ]
+=======
+            ],
+            "time": "2018-09-21T19:30:33+00:00"
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
         },
         {
             "name": "laravel/tinker",
@@ -1707,6 +1794,7 @@
         },
         {
             "name": "league/flysystem",
+<<<<<<< HEAD
             "version": "1.0.46",
             "source": {
                 "type": "git",
@@ -1717,16 +1805,28 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f3e0d925c18b92cf3ce84ea5cc58d62a1762a2b2",
                 "reference": "f3e0d925c18b92cf3ce84ea5cc58d62a1762a2b2",
+=======
+            "version": "1.0.47",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem.git",
+                "reference": "a11e4a75f256bdacf99d20780ce42d3b8272975c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/a11e4a75f256bdacf99d20780ce42d3b8272975c",
+                "reference": "a11e4a75f256bdacf99d20780ce42d3b8272975c",
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                 "shasum": ""
             },
             "require": {
+                "ext-fileinfo": "*",
                 "php": ">=5.5.9"
             },
             "conflict": {
                 "league/flysystem-sftp": "<1.0.6"
             },
             "require-dev": {
-                "ext-fileinfo": "*",
                 "phpspec/phpspec": "^3.4",
                 "phpunit/phpunit": "^5.7.10"
             },
@@ -1787,7 +1887,11 @@
                 "sftp",
                 "storage"
             ],
+<<<<<<< HEAD
             "time": "2018-08-22T07:45:22+00:00"
+=======
+            "time": "2018-09-14T15:30:29+00:00"
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
         },
         {
             "name": "league/flysystem-cached-adapter",
@@ -1963,7 +2067,11 @@
         },
         {
             "name": "maatwebsite/laravel-nova-excel",
+<<<<<<< HEAD
             "version": "1.0.6",
+=======
+            "version": "1.0.x-dev",
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maatwebsite/Laravel-Nova-Excel.git",
@@ -2290,6 +2398,77 @@
             "time": "2017-02-16T16:54:46+00:00"
         },
         {
+<<<<<<< HEAD
+=======
+            "name": "mustafawithA/nrcthemetwo",
+            "version": "9999999-dev",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/Nrcthemetwo",
+                "reference": "d01d02a918afc0f8281ef0cc6b01655e829d93b9",
+                "shasum": null
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MustafawithA\\Nrcthemetwo\\ThemeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MustafawithA\\Nrcthemetwo\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova theme.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ]
+        },
+        {
+            "name": "mustafawitha/themetwo",
+            "version": "9999999-dev",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/Themetwo",
+                "reference": "4857f1017c19349d661f35384431b164bf363b68",
+                "shasum": null
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Mustafawitha\\Themetwo\\ThemeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mustafawitha\\Themetwo\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova theme.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ]
+        },
+        {
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
             "name": "naif/map_address",
             "version": "v1.0",
             "source": {
@@ -2488,16 +2667,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.0.3",
+            "version": "v4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "bd088dc940a418f09cda079a9b5c7c478890fb8d"
+                "reference": "fa6ee28600d21d49b2b4e1006b48426cec8e579c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd088dc940a418f09cda079a9b5c7c478890fb8d",
-                "reference": "bd088dc940a418f09cda079a9b5c7c478890fb8d",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/fa6ee28600d21d49b2b4e1006b48426cec8e579c",
+                "reference": "fa6ee28600d21d49b2b4e1006b48426cec8e579c",
                 "shasum": ""
             },
             "require": {
@@ -2535,7 +2714,48 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-07-15T17:25:16+00:00"
+            "time": "2018-09-18T07:03:24+00:00"
+        },
+        {
+            "name": "owenmelbz/nova-radio-field",
+            "version": "0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OwenMelbz/nova-radio-field.git",
+                "reference": "d34efafc298d55aceeea87fca4f5398498399a30"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OwenMelbz/nova-radio-field/zipball/d34efafc298d55aceeea87fca4f5398498399a30",
+                "reference": "d34efafc298d55aceeea87fca4f5398498399a30",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "OwenMelbz\\RadioField\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OwenMelbz\\RadioField\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova radio field.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "time": "2018-08-27T19:03:08+00:00"
         },
         {
             "name": "owenmelbz/nova-radio-field",
@@ -3266,16 +3486,16 @@
         },
         {
             "name": "spatie/image-optimizer",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/image-optimizer.git",
-                "reference": "1530d6cf72070068eecab150ffb73466c3806bdd"
+                "reference": "0cc312a83186afc586df0cb034c4303c3d7cf629"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/image-optimizer/zipball/1530d6cf72070068eecab150ffb73466c3806bdd",
-                "reference": "1530d6cf72070068eecab150ffb73466c3806bdd",
+                "url": "https://api.github.com/repos/spatie/image-optimizer/zipball/0cc312a83186afc586df0cb034c4303c3d7cf629",
+                "reference": "0cc312a83186afc586df0cb034c4303c3d7cf629",
                 "shasum": ""
             },
             "require": {
@@ -3311,7 +3531,75 @@
                 "image-optimizer",
                 "spatie"
             ],
-            "time": "2018-06-05T07:36:17+00:00"
+            "time": "2018-09-10T10:21:45+00:00"
+        },
+        {
+            "name": "spatie/laravel-backup",
+            "version": "5.10.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-backup.git",
+                "reference": "20598fb6fd8695809ffceacfbaf22a816f546bca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-backup/zipball/20598fb6fd8695809ffceacfbaf22a816f546bca",
+                "reference": "20598fb6fd8695809ffceacfbaf22a816f546bca",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.5.0|~5.6.0|~5.5.0|~5.7.0",
+                "league/flysystem": "^1.0.27",
+                "php": "^7.1",
+                "spatie/db-dumper": "^2.10",
+                "spatie/temporary-directory": "^1.1",
+                "symfony/finder": "^3.3|^4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0",
+                "phpunit/phpunit": "^7.3"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "Allows notifications to be sent via Slack"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Backup\\BackupServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Backup\\": "src"
+                },
+                "files": [
+                    "src/Helpers/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel 5 package to backup your application",
+            "homepage": "https://github.com/spatie/laravel-backup",
+            "keywords": [
+                "backup",
+                "database",
+                "laravel-backup",
+                "spatie"
+            ],
+            "time": "2018-08-24T09:10:11+00:00"
         },
         {
             "name": "spatie/laravel-backup",
@@ -3442,6 +3730,7 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
+<<<<<<< HEAD
             "version": "7.4.2",
             "source": {
                 "type": "git",
@@ -3456,6 +3745,26 @@
             },
             "require": {
                 "laravel/framework": "~5.5.0|~5.6.0|~5.7.0",
+=======
+            "version": "7.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-medialibrary.git",
+                "reference": "e8aba8e897456d4ce5ad090879e3aef564d3494d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/e8aba8e897456d4ce5ad090879e3aef564d3494d",
+                "reference": "e8aba8e897456d4ce5ad090879e3aef564d3494d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/bus": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/console": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/database": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/pipeline": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/support": "~5.5.0|~5.6.0|~5.7.0",
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                 "league/flysystem": "^1.0.8",
                 "maennchen/zipstream-php": "~0.4",
                 "php": "^7.1",
@@ -3517,6 +3826,7 @@
                 "media",
                 "spatie"
             ],
+<<<<<<< HEAD
             "time": "2018-09-05T09:31:23+00:00"
         },
         {
@@ -3540,58 +3850,21 @@
             "require-dev": {
                 "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0",
                 "phpunit/phpunit": "^6.5|^7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Spatie\\ModelStatus\\ModelStatusServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\ModelStatus\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Thomas Verhelst",
-                    "email": "tvke91@gmail.com",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A package to enable assigning statuses to Eloquent Models",
-            "homepage": "https://github.com/spatie/laravel-model-status",
-            "keywords": [
-                "laravel-status",
-                "spatie"
-            ],
-            "time": "2018-09-03T14:43:07+00:00"
+=======
+            "time": "2018-09-17T11:28:05+00:00"
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "2.18.0",
+            "version": "2.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "0319fefd54319e7a1155ded3c9a754ef3f7f58d8"
+                "reference": "e2200bb92b67632abc92aa438de9cb0958da20d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/0319fefd54319e7a1155ded3c9a754ef3f7f58d8",
-                "reference": "0319fefd54319e7a1155ded3c9a754ef3f7f58d8",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/e2200bb92b67632abc92aa438de9cb0958da20d9",
+                "reference": "e2200bb92b67632abc92aa438de9cb0958da20d9",
                 "shasum": ""
             },
             "require": {
@@ -3601,6 +3874,7 @@
             "require-dev": {
                 "orchestra/testbench": "~3.4.2|~3.5.0|~3.6.0|~3.7.0",
                 "phpunit/phpunit": "^5.7|6.2|^7.0"
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
             },
             "type": "library",
             "extra": {
@@ -3639,6 +3913,144 @@
                 "security",
                 "spatie"
             ],
+<<<<<<< HEAD
+            "time": "2018-09-03T14:43:07+00:00"
+        },
+        {
+            "name": "spatie/laravel-permission",
+            "version": "2.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-permission.git",
+                "reference": "0319fefd54319e7a1155ded3c9a754ef3f7f58d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/0319fefd54319e7a1155ded3c9a754ef3f7f58d8",
+                "reference": "0319fefd54319e7a1155ded3c9a754ef3f7f58d8",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.4.0|~5.5.0|~5.6.0|~5.7.0",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.4.2|~3.5.0|~3.6.0|~3.7.0",
+                "phpunit/phpunit": "^5.7|6.2|^7.0"
+=======
+            "time": "2018-09-20T01:30:08+00:00"
+        },
+        {
+            "name": "spatie/nova-backup-tool",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/nova-backup-tool.git",
+                "reference": "7df7d3f4df7f8bce7241f9890e3a50b650f41554"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/nova-backup-tool/zipball/7df7d3f4df7f8bce7241f9890e3a50b650f41554",
+                "reference": "7df7d3f4df7f8bce7241f9890e3a50b650f41554",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "*",
+                "php": ">=7.1.0",
+                "spatie/laravel-backup": "^5.10.0",
+                "symfony/process": "^4.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.6",
+                "phpunit/phpunit": "7.1",
+                "spatie/phpunit-snapshot-assertions": "^1.3"
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\BackupTool\\BackupToolServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\BackupTool\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel Nova tool to backup your application.",
+            "homepage": "https://github.com/spatie/nova-backup-tool",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "time": "2018-09-14T13:44:45+00:00"
+        },
+        {
+            "name": "spatie/once",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/once.git",
+                "reference": "26b52e4571882c526d0bc017f354d997d263a98e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/once/zipball/26b52e4571882c526d0bc017f354d997d263a98e",
+                "reference": "26b52e4571882c526d0bc017f354d997d263a98e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "illuminate/support": "~5.3.0",
+                "phpunit/phpunit": "5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Once\\": "src"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A magic memoization function",
+            "homepage": "https://github.com/spatie/once",
+            "keywords": [
+                "cache",
+                "callable",
+                "memozation",
+                "once",
+                "spatie"
+            ],
+<<<<<<< HEAD
             "time": "2018-09-06T14:30:14+00:00"
         },
         {
@@ -3750,6 +4162,8 @@
                 "once",
                 "spatie"
             ],
+=======
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
             "time": "2017-08-24T21:16:25+00:00"
         },
         {
@@ -3908,16 +4322,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v6.1.2",
+            "version": "v6.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "7d760881d266d63c5e7a1155cbcf2ac656a31ca8"
+                "reference": "8ddcb66ac10c392d3beb54829eef8ac1438595f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/7d760881d266d63c5e7a1155cbcf2ac656a31ca8",
-                "reference": "7d760881d266d63c5e7a1155cbcf2ac656a31ca8",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/8ddcb66ac10c392d3beb54829eef8ac1438595f4",
+                "reference": "8ddcb66ac10c392d3beb54829eef8ac1438595f4",
                 "shasum": ""
             },
             "require": {
@@ -3963,7 +4377,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2018-07-13T07:04:35+00:00"
+            "time": "2018-09-11T07:12:52+00:00"
         },
         {
             "name": "symfony/console",
@@ -4994,23 +5408,23 @@
         },
         {
             "name": "tymon/jwt-auth",
-            "version": "1.0.0-rc.2",
+            "version": "1.0.0-rc.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tymondesigns/jwt-auth.git",
-                "reference": "d5220f6a84cbb8300f6f2f0f20aa908d072b4e4b"
+                "reference": "e190b6a75372e7e5e3a6d2cf0e4456313412299f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/d5220f6a84cbb8300f6f2f0f20aa908d072b4e4b",
-                "reference": "d5220f6a84cbb8300f6f2f0f20aa908d072b4e4b",
+                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/e190b6a75372e7e5e3a6d2cf0e4456313412299f",
+                "reference": "e190b6a75372e7e5e3a6d2cf0e4456313412299f",
                 "shasum": ""
             },
             "require": {
-                "illuminate/auth": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.*",
-                "illuminate/contracts": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.*",
-                "illuminate/http": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.*",
-                "illuminate/support": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.*",
+                "illuminate/auth": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.*",
+                "illuminate/contracts": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.*",
+                "illuminate/http": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.*",
+                "illuminate/support": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.*",
                 "lcobucci/jwt": "^3.2",
                 "namshi/jose": "^7.0",
                 "nesbot/carbon": "^1.0",
@@ -5018,9 +5432,9 @@
             },
             "require-dev": {
                 "cartalyst/sentinel": "2.0.*",
-                "illuminate/console": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.*",
-                "illuminate/database": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.*",
-                "illuminate/routing": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.*",
+                "illuminate/console": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.*",
+                "illuminate/database": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.*",
+                "illuminate/routing": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.*",
                 "mockery/mockery": ">=0.9.9",
                 "phpunit/phpunit": "~4.8 || ~6.0"
             },
@@ -5065,7 +5479,7 @@
                 "jwt",
                 "laravel"
             ],
-            "time": "2018-02-07T20:55:14+00:00"
+            "time": "2018-09-04T19:48:02+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -5118,7 +5532,11 @@
             "time": "2018-07-29T20:33:41+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "vyuldashev/nova-spatie-permission",
+=======
+            "name": "vyuldashev/nova-permission",
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
             "version": "v1.3.0",
             "source": {
                 "type": "git",
@@ -5158,7 +5576,10 @@
                 "nova",
                 "spatie-permission"
             ],
+<<<<<<< HEAD
             "abandoned": "vyuldashev/nova-permission",
+=======
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
             "time": "2018-08-31T20:47:53+00:00"
         }
     ],
@@ -5219,16 +5640,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "181c4502d8f34db7aed7bfe88d4f87875b8e947a"
+                "reference": "e79cd403fb77fc8963a99ecc30e80ddd885b3311"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/181c4502d8f34db7aed7bfe88d4f87875b8e947a",
-                "reference": "181c4502d8f34db7aed7bfe88d4f87875b8e947a",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/e79cd403fb77fc8963a99ecc30e80ddd885b3311",
+                "reference": "e79cd403fb77fc8963a99ecc30e80ddd885b3311",
                 "shasum": ""
             },
             "require": {
@@ -5247,7 +5668,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -5276,7 +5697,7 @@
                 "throwable",
                 "whoops"
             ],
-            "time": "2018-03-03T17:56:25+00:00"
+            "time": "2018-06-30T13:14:06+00:00"
         },
         {
             "name": "fzaninotto/faker",
@@ -5986,20 +6407,23 @@
         },
         {
             "name": "phpunit/php-file-iterator",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c"
+                "reference": "050bedf145a257b1ff02746c31894800e5122946"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/cecbc684605bb0cc288828eb5d65d93d5c676d3c",
-                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/050bedf145a257b1ff02746c31894800e5122946",
+                "reference": "050bedf145a257b1ff02746c31894800e5122946",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.1"
             },
             "type": "library",
             "extra": {
@@ -6029,7 +6453,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2018-06-11T11:44:00+00:00"
+            "time": "2018-09-13T20:33:42+00:00"
         },
         {
             "name": "phpunit/php-text-template",
@@ -6172,6 +6596,7 @@
         },
         {
             "name": "phpunit/phpunit",
+<<<<<<< HEAD
             "version": "7.3.4",
             "source": {
                 "type": "git",
@@ -6182,6 +6607,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/0356331bf62896dc56e3a15030b23b73f38b2935",
                 "reference": "0356331bf62896dc56e3a15030b23b73f38b2935",
+=======
+            "version": "7.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/phpunit.git",
+                "reference": "7b331efabbb628c518c408fdfcaf571156775de2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7b331efabbb628c518c408fdfcaf571156775de2",
+                "reference": "7b331efabbb628c518c408fdfcaf571156775de2",
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                 "shasum": ""
             },
             "require": {
@@ -6252,7 +6689,11 @@
                 "testing",
                 "xunit"
             ],
+<<<<<<< HEAD
             "time": "2018-09-05T09:58:53+00:00"
+=======
+            "time": "2018-09-08T15:14:29+00:00"
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -6911,6 +7352,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "maatwebsite/laravel-nova-excel": 20,
         "laracasts/generators": 20
     },
     "prefer-stable": true,

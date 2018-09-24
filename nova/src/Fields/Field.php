@@ -6,10 +6,19 @@ use Closure;
 use JsonSerializable;
 use Illuminate\Support\Str;
 use Laravel\Nova\Contracts\Resolvable;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Traits\Macroable;
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 abstract class Field extends FieldElement implements JsonSerializable, Resolvable
 {
+<<<<<<< HEAD
+=======
+    use Macroable;
+
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
     /**
      * The displayable name of the field.
      *
@@ -316,7 +325,11 @@ abstract class Field extends FieldElement implements JsonSerializable, Resolvabl
     /**
      * Set the validation rules for the field.
      *
+<<<<<<< HEAD
      * @param  \Closure|array  $rules
+=======
+     * @param  callable|array|string  $rules
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
      * @return $this
      */
     public function rules($rules)
@@ -359,7 +372,11 @@ abstract class Field extends FieldElement implements JsonSerializable, Resolvabl
     /**
      * Set the creation validation rules for the field.
      *
+<<<<<<< HEAD
      * @param  callable|array  $rules
+=======
+     * @param  callable|array|string  $rules
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
      * @return $this
      */
     public function creationRules($rules)
@@ -389,7 +406,11 @@ abstract class Field extends FieldElement implements JsonSerializable, Resolvabl
     /**
      * Set the creation validation rules for the field.
      *
+<<<<<<< HEAD
      * @param  callable|array  $rules
+=======
+     * @param  callable|array|string  $rules
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
      * @return $this
      */
     public function updateRules($rules)

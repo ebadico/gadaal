@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=1280">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+<<<<<<< HEAD
     <title>{{ Nova::name() }}</title>
+=======
+    <title>NRC Wash App</title>
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,800,800i,900,900i" rel="stylesheet">
@@ -25,8 +29,12 @@
             <div class="min-h-screen flex-none pt-header min-h-screen w-sidebar bg-grad-sidebar px-6">
                 <a href="{{ Nova::path() }}">
                     <div class="absolute pin-t pin-l pin-r bg-logo flex items-center w-sidebar h-header px-6 text-white">
+<<<<<<< HEAD
                         
                             <h3>NRC APP</h3>
+=======
+                       NRC Wash App
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                     </div>
                 </a>
 
@@ -39,7 +47,11 @@
             <div class="content">
                 <div class="flex items-center relative shadow h-header bg-white z-50 px-6">
                     <a href="{{ Config::get('nova.url') }}" class="no-underline dim font-bold text-90 mr-6">
+<<<<<<< HEAD
                             <h3>NRC APP</h3>
+=======
+                        NRC Wash App
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                     </a>
 
                     @if (count(Nova::globallySearchableResources(request())) > 0)
@@ -55,7 +67,11 @@
                     @yield('content')
 
                     <p class="mt-8 text-center text-xs text-80">
+<<<<<<< HEAD
                         <a href="http://nova.laravel.com" class="text-primary dim no-underline">Laravel Nova</a>
+=======
+                        <a href="http://Ilsoftware.so" class="text-primary dim no-underline">NRC Wash App</a>
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                         <span class="px-1">&middot;</span>
                         &copy; {{ date('Y') }} Ilsoftware.so.
                         <span class="px-1">&middot;</span>
@@ -93,5 +109,10 @@
     <script>
         Nova.liftOff()
     </script>
+<<<<<<< HEAD
+=======
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGuFAiycI9OrJ7mfBH3tmS1aqhMVpQP5U"></script>
+
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
 </body>
 </html>

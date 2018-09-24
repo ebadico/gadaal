@@ -41,7 +41,11 @@
         "flatpickr": "^4.4.4",
         "form-backend-validation": "^2.3.3",
         "inflector-js": "^1.0.1",
+<<<<<<< HEAD
         "laravel-nova": "^1.0.2",
+=======
+        "laravel-nova": "^1.0.3",
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
         "markdown-it": "^8.4.1",
         "marked": "^0.3.19",
         "moment": "^2.22.2",

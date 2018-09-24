@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
     <div class="relative z-50 w-full max-w-xs">
         <div
             v-if="currentlySearching"
@@ -8,6 +9,10 @@
 
         <div class="relative">
 
+=======
+    <div v-on-clickaway="closeSearch" class="relative z-50 w-full max-w-xs">
+        <div class="relative">
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
             <!-- Search -->
             <div class="relative">
                 <icon type="search" class="absolute search-icon-center ml-3 text-70" />
@@ -20,7 +25,10 @@
                     @keydown.enter.stop="goToCurrentlySelectedResource"
                     @keydown.esc.stop="closeSearch"
                     @focus="openSearch"
+<<<<<<< HEAD
                     @blur="closeSearch"
+=======
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                     @keydown.down.prevent="move(1)"
                     @keydown.up.prevent="move(-1)"
                     v-model="searchTerm"
@@ -30,7 +38,10 @@
                 />
             </div>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
             <div
                 v-if="shouldShowResults"
                 class="overflow-hidden absolute rounded-lg shadow-lg w-full mt-2 max-h-search overflow-y-auto"
@@ -38,7 +49,11 @@
             >
                 <div v-for="group in formattedResults">
                     <h3 class="text-xs uppercase tracking-wide text-80 bg-40 py-2 px-3">
+<<<<<<< HEAD
                         {{ group.resourceName }}
+=======
+                        {{ group.resourceTitle }}
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                     </h3>
 
                     <ul class="list-reset">
@@ -73,8 +88,16 @@
 
 <script>
 import { Minimum } from 'laravel-nova'
+<<<<<<< HEAD
 
 export default {
+=======
+import { mixin as clickaway } from 'vue-clickaway'
+
+export default {
+    mixins: [clickaway],
+
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
     data: () => ({
         currentlySearching: false,
         searchTerm: '',

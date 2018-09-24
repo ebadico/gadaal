@@ -17,7 +17,11 @@ class AttachableController extends Controller
     {
         $field = $request->newResource()
                     ->availableFields($request)
+<<<<<<< HEAD
                     ->firstWhere('attribute', $request->field);
+=======
+                    ->firstWhere('resourceName', $request->field);
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
 
         $withTrashed = $this->shouldIncludeTrashed(
             $request, $associatedResource = $field->resourceClass

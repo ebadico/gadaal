@@ -65,8 +65,18 @@
     "Please select a resource to perform this action on.": "Please select a resource to perform this action on.",
     "Preview": "Preview",
     "Previous": "Previous",
+<<<<<<< HEAD
     "Run Action": "Run Action",
     "Select Action": "Select Action",
+=======
+    "No Data": "No Data",
+    "No Current Data": "No Current Data",
+    "No Prior Data": "No Prior Data",
+    "No Increase": "No Increase",
+    "Run Action": "Run Action",
+    "Select Action": "Select Action",
+    "Search": "Search",
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
     "Select All": "Select All",
     "Select All Matching": "Select All Matching",
     "Something went wrong.": "Something went wrong.",
@@ -77,9 +87,18 @@
     "Update &amp; Continue Editing": "Update &amp; Continue Editing",
     "View": "View",
     "We\\'re lost in space. The page your were trying to view does not exist.": "We\\'re lost in space. The page your were trying to view does not exist.",
+<<<<<<< HEAD
     "Whoops": "Whoops",
     "Whoops!": "Whoops!",
     "With Trashed": "With Trashed",
+=======
+    "Show Content": "Show Content",
+    "Hide Content": "Hide Content",
+    "Whoops": "Whoops",
+    "Whoops!": "Whoops!",
+    "With Trashed": "With Trashed",
+    "Trashed": "Trashed",
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
     "Write": "Write",
     "could not be found.": "could not be found.",
     "total": "total",
@@ -339,5 +358,11 @@
     "Western Sahara": "Western Sahara",
     "Yemen": "Yemen",
     "Zambia": "Zambia",
+<<<<<<< HEAD
     "Zimbabwe": "Zimbabwe"
+=======
+    "Zimbabwe": "Zimbabwe",
+    "Yes": "Yes",
+    "No": "No"
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
 }

@@ -52,7 +52,11 @@ class User extends Resource
 
             Text::make('Email')
                 ->sortable()
+<<<<<<< HEAD
                 ->rules('required', 'email', 'max:255')
+=======
+                ->rules('required', 'email', 'max:254')
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                 ->creationRules('unique:users,email')
                 ->updateRules('unique:users,email,{{resourceId}}'),
 

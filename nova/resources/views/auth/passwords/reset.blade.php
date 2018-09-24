@@ -30,7 +30,11 @@
     </div>
 
     <div class="mb-6 {{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
+<<<<<<< HEAD
         <label class="block font-bold mb-2" for="password-confirm" control-label">{{ __('Confirm Password') }}</label>
+=======
+        <label class="block font-bold mb-2" for="password-confirm">{{ __('Confirm Password') }}</label>
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
         <input class="form-control form-input form-input-bordered w-full" id="password-confirm" type="password" name="password_confirmation" required>
     </div>
 

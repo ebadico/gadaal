@@ -5,7 +5,11 @@
             <span class="ml-auto font-semibold text-70 text-sm">({{ formattedTotal}} {{__('total')}})</span>
         </h3>
 
+<<<<<<< HEAD
         <div class="overflow-hidden overflow-y-scroll max-h-90px">
+=======
+        <div class="overflow-hidden overflow-y-auto max-h-90px">
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
             <ul class="list-reset">
                 <li v-for="item in formattedItems" class="text-xs text-80 leading-normal">
                     <span class="inline-block rounded-full w-2 h-2 mr-2" :style="{

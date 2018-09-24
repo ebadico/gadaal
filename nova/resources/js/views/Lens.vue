@@ -184,6 +184,7 @@
             </div>
 
             <!-- Resource Table -->
+<<<<<<< HEAD
             <resource-table
                 :authorized-to-relate="authorizedToRelate"
                 :resource-name="resourceName"
@@ -203,6 +204,29 @@
                 @restore="restoreResources"
                 ref="resourceTable"
             />
+=======
+            <div class="overflow-hidden overflow-x-auto relative">
+                <resource-table
+                    :authorized-to-relate="authorizedToRelate"
+                    :resource-name="resourceName"
+                    :resources="resources"
+                    :singular-name="singularName"
+                    :selected-resources="selectedResources"
+                    :selected-resource-ids="selectedResourceIds"
+                    :actions-are-available="allActions.length > 0"
+                    :should-show-checkboxes="shouldShowCheckBoxes"
+                    :via-resource="viaResource"
+                    :via-resource-id="viaResourceId"
+                    :via-relationship="viaRelationship"
+                    :relationship-type="relationshipType"
+                    :update-selection-status="updateSelectionStatus"
+                    @order="orderByField"
+                    @delete="deleteResources"
+                    @restore="restoreResources"
+                    ref="resourceTable"
+                />
+            </div>
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
 
             <!-- Pagination -->
             <pagination-links
@@ -217,7 +241,11 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import { Errors, Capitalize, Inflector, Minimum } from 'laravel-nova'
+=======
+import { Errors, Minimum } from 'laravel-nova'
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
 
 import {
     Deletable,
@@ -701,7 +729,11 @@ export default {
          * Get the singular name for the resource
          */
         singularName() {
+<<<<<<< HEAD
             return Capitalize(Inflector.singularize(this.resourceName))
+=======
+            return this.resourceInformation.singularLabel
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
         },
 
         /**

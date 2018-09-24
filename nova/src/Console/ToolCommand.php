@@ -216,7 +216,11 @@ class ToolCommand extends Command
         }
 
         $process->run(function ($type, $line) {
+<<<<<<< HEAD
             $this->command->output->write($line);
+=======
+            $this->output->write($line);
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
         });
     }
 

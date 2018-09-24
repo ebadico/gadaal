@@ -73,7 +73,11 @@ class UserResource extends Resource
                             ->updateRules('required', 'string', 'max:255'),
             ]),
 
+<<<<<<< HEAD
             Text::make('Email')->rules('required', 'email', 'max:255')
+=======
+            Text::make('Email')->rules('required', 'email', 'max:254')
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                                 ->creationRules(function ($request) {
                                     return ['unique:users,email'];
                                 })

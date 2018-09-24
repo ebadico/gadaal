@@ -35,12 +35,17 @@
                     </span>
 
                     <span v-else>
+<<<<<<< HEAD
                         No Increase
+=======
+                        {{__('No Increase')}}
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                     </span>
                 </span>
 
                 <span v-else>
                     <span v-if="previous == '0' && value != '0'">
+<<<<<<< HEAD
                         No Prior Data
                     </span>
 
@@ -50,6 +55,17 @@
 
                     <span v-if="value == '0' && previous == '0'">
                         No Data
+=======
+                        {{__('No Prior Data')}}
+                    </span>
+
+                    <span v-if="value == '0' && previous != '0'">
+                        {{__('No Current Data')}}
+                    </span>
+
+                    <span v-if="value == '0' && previous == '0'">
+                        {{__('No Data')}}
+>>>>>>> 4356d8bf7b1edc7b0c182b9e1a519ff606eac5fb
                     </span>
                 </span>
             </p>
